@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows And Column</title>
+    <style>
+    body, html{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main{
+        height: 100vh;
+        background: rgb(243, 118, 118);
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px; */ 
+
+        /* grid-template-rows: 1fr 1fr 1fr 1fr;
+        row-gap: 20px; */
+
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap:20px;
+    }
+    .b1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background: rgb(87, 228, 59);
+    }
+    .b2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background: rgb(28, 70, 206);
+    }
+    .anona{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: rgb(44, 222, 241);
+    }
+    .b4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background: rgb(214, 14, 124);
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="b1">BEA 1 </div>
+        <div class="b2">BEA 2</div>
+        <div class="anona">BEA 3</div>
+        <div class="b4">BEA 4</div>
+    </div>
+</body>
+</html>

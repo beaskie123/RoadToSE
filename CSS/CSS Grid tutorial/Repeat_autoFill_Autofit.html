@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeat AutoFill AutoFit</title>
+    <style>
+    body, html{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .main{
+        height: 100vh;
+        background: rgb(243, 118, 118);
+        display: grid;
+        /* grid-template-rows: repeat(3 , 100px) 150px; */
+
+        /* grid-template-columns: repeat(Auto-fill, 50px); */
+        
+        grid-template-columns: repeat(Auto-fit, 50px);
+        }
+
+    .b1{
+        background: rgb(87, 228, 59);
+    }
+    .b2{
+        background: rgb(28, 70, 206);
+    }
+    .anona{
+        background: rgb(44, 222, 241);
+    }
+    .b4{
+        background: rgb(214, 14, 124);
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="b1">BEA 1 </div>
+        <div class="b2">BEA 2</div>
+        <div class="anona">BEA 3</div>
+        <div class="b4">BEA 4</div>
+    </div>
+</body>
+</html>

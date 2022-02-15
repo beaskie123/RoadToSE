@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips and Tricks</title>
+    <style>
+    body{
+        padding: 0;
+        margin:0;
+    }
+    .main{
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    .main .box{
+        background: rgb(218, 150, 125);
+        height: 100px;
+        width: 100px;
+        /* animation-name: boxAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: reverse ; */
+
+        animation: boxAnimation 3s ease-in infinite reverse;
+        
+    }
+
+    @keyframes boxAnimation {
+        
+        /* from  */
+        0% {
+            background: rgb(187, 49, 49);
+            height: 100px;
+            width: 100px;
+        }
+        50% {
+            background: rgb(212, 212, 56);
+            height: 300px;
+            width: 300px;
+        }
+        /* To */
+        100%{
+            background: rgb(86, 194, 86);
+            height: 200px;
+            width: 200px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+</head>
+<style>
+html, body{margin: 0;
+    padding: 0;
+}
+.main{
+    height: 1000px;
+    display: grid;
+    place-items: center;
+}
+.main .Parentbox{
+    height: 400px;
+    width: 300px;
+    background: coral;
+    /* position: fixed; POSITION FIXED
+    top: 50px;
+    right: 50px; */
+    position: relative;  /*POSITION RELATIVE AND ABSOLUTE*/
+}
+.main .Parentbox .Childbox{
+    height: 50px;
+    width: 50px;
+    background: violet;
+    position: absolute;
+    top: -10PX; /*OVERLAP*/
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+</style>
+<body>
+    <div class="main">
+        <div class="Parentbox">
+            <div class="Childbox"></div>
+        </div>
+    </div>
+</body>
+</html>

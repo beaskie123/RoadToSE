@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Parallax </title>
+</head>
+<style>
+html, main {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.main{
+    /* First Option */
+    position: relative;
+    /* Second Option */
+    /* display: grid;
+    grid-auto-rows: 100vh; */
+}
+/* First OPTION
+    .main .section{
+    height: 100vh;
+ }  */
+ .main .section{
+     height: 100vh;
+     background-size: cover;
+     background-position: center center;
+ }
+.main #section1{
+    background-image: url('../CUSTOM UI/img/img1.jpg');
+}
+.main #section2{
+    background-image: url('../CUSTOM UI/img/img2.jpg');
+}
+.main #section3{
+    background-image: url('../CUSTOM UI/img/img3.jpg');
+    height: 400px;
+    background-attachment: fixed;
+}
+.main #section4{
+    background-image: url('../CUSTOM UI/img/img4.jpg');
+}
+</style>
+<body>
+    <ul class="navigat">
+        <li><a href="#section1">Go to Section 1</a></li>
+        <li><a href="#section2">Go to Section 2</a></li>
+        <li><a href="#section3">Go to Section 3</a></li>
+        <li><a href="#section4">Go to Section 4</a></li>
+    </ul>
+<div class="main">
+    
+    <div class="section" id="section1"> Section 1</div>
+    <div class="section" id="section2">Section 2 </div>
+    <div class="section" id="section3">Section 3</div>
+    <div class="section" id="section4">Section 4</div>
+</div>    
+</body>
+</html>
